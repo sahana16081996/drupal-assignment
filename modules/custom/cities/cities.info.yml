@@ -1,0 +1,5 @@
+name: Cities
+type: module
+description: 'Provides cities entity.'
+package: Custom
+core_version_requirement: ^9.4 || ^10

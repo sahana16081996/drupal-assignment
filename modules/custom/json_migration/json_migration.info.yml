@@ -1,0 +1,8 @@
+name: Json Migration
+description: Migrates the content from json.
+package: Custom
+type: module
+core_version_requirement: ^9.4 || ^10
+dependencies:
+  - drupal:migrate_plus
+  - drupal:migrate_tools

@@ -1,0 +1,20 @@
+cities.settings_tab:
+  route_name: cities.cities_settings
+  title: Settings
+  base_route: cities.cities_settings
+
+cities.view:
+  route_name: entity.content_entity_cities.canonical
+  base_route: entity.content_entity_cities.canonical
+  title: View
+
+cities.page_edit:
+  route_name: entity.content_entity_cities.edit_form
+  base_route: entity.content_entity_cities.canonical
+  title: Edit
+
+cities.delete_confirm:
+  route_name:  entity.content_entity_cities.delete_form
+  base_route:  entity.content_entity_cities.canonical
+  title: Delete
+  weight: 10

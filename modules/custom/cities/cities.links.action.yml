@@ -1,0 +1,6 @@
+cities.cities_add:
+  route_name: entity.cities.add_form
+  title: 'Add City'
+  appears_on:
+    - entity.content_entity_cities.collection
+    - entity.content_entity_cities.canonical
