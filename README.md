@@ -1,19 +1,34 @@
+# In this project Created two modules one is to create a custom entity and another one is for migration. 
 
-In this project Created two modules one is to create a custom entity and another one is for migration.
+This module provides the migration configuration,  listing the data of cities.
 
-Migration commands
+## Installation
 
-drush ms cities_data_migration  - To check the status of migration
+1. Run ```ddev start``` command.
 
-drush mim cities_data_migration - To import the data
+2. Execute ```ddev drush cim``` command. ( Imports the configuration required for our site )
 
-Drush mr cities_data_migration - To Roll back the migrated data
+3. Now For Executing migration run below command
+
+   To check the status of migration
+
+   ``` drush ms cities_data_migration  ```
+
+   To import the data
+    
+   ``` drush mim cities_data_migration  ```
+
+   To Roll back the migrated data
+
+   ``` Drush mr cities_data_migration```
 
 
-The imported data we can see in the Url
+## Listing data
 
-https://drupal-assignment.ddev.site/content_entity_cities/list
+To view the content of cities.
+
+Navigate to ```https://drupal-assignment.ddev.site/content_entity_cities/list``` url
 
 And  we can create the custom entities using the url
 
-https://drupal-assignment.ddev.site/content_entity_cities/add
+```https://drupal-assignment.ddev.site/content_entity_cities/add``` 

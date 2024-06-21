@@ -50,4 +50,3 @@ process:
 destination:
   plugin: entity:content_entity_cities
 migration_dependencies: null
-

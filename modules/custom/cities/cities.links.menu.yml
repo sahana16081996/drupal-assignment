@@ -3,4 +3,3 @@ entity.content_entity_cities.collection:
   route_name: entity.content_entity_cities.collection
   description: 'List Cities'
   parent: system.admin
-

@@ -1,9 +1,9 @@
 <?php
+
 namespace Drupal\cities\Controller;
 
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
-use Drupal\Core\Url;
 
 /**
  * Provides a list controller for content_entity_manage_inventory entity.
@@ -20,12 +20,12 @@ class CitiesListBuilder extends EntityListBuilder {
    * buildHeader() and buildRow() implementations.
    */
   public function render() {
-    $build['description'] = array(
-      '#markup' => $this->t('Content Entity Example implements a Inventory model. These contacts are fieldable entities. You can manage the fields on the <a href="@adminlink">Inventory admin page</a>.', array(
+    $build['description'] = [
+      '#markup' => $this->t('Content Entity Example implements a Inventory model. These contacts are fieldable entities. You can manage the fields on the <a href="@adminlink">Inventory admin page</a>.', [
         '@adminlink' => \Drupal::urlGenerator()
           ->generateFromRoute('cities.cities_settings'),
-      )),
-    );
+      ]),
+    ];
     $build['table'] = parent::render();
     return $build;
   }
@@ -50,7 +50,7 @@ class CitiesListBuilder extends EntityListBuilder {
    * {@inheritdoc}
    */
   public function buildRow(EntityInterface $entity) {
-    /* @var $entity \Drupal\cities\Entity\cities */
+    /** @var \Drupal\cities\Entity\cities $entity */
     // dump($entity); die();
     $row['id'] = $entity->id();
     $row['name'] = $entity->name->value;
@@ -60,5 +60,3 @@ class CitiesListBuilder extends EntityListBuilder {
   }
 
 }
-
-?>
