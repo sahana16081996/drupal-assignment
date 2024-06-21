@@ -1,6 +1,6 @@
 # In this project Created two modules one is to create a custom entity and another one is for migration. 
 
-This module provides the migration configuration,  listing the data of cities.
+This module provides the migration configuration and listing of the migrated data to custom entities  of cities.
 
 ## Installation
 
@@ -8,7 +8,7 @@ This module provides the migration configuration,  listing the data of cities.
 
 2. Execute ```ddev drush cim``` command. ( Imports the configuration required for our site )
 
-3. Now For Executing migration run below command
+3. Now to execute migration run the below command
 
    To check the status of migration
 
@@ -29,6 +29,6 @@ To view the content of cities.
 
 Navigate to ```https://drupal-assignment.ddev.site/content_entity_cities/list``` url
 
-And  we can create the custom entities using the url
+We can create custom entities using the URL
 
 ```https://drupal-assignment.ddev.site/content_entity_cities/add``` 
