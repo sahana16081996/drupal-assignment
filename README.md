@@ -1,6 +1,6 @@
 # In this project Created two modules one is to create a custom entity and another one is for migration. 
 
-This module provides the migration configuration and listing of the migrated data to custom entities  of cities.
+This module provides the migration configuration and listing of the migrated data to the custom entity of cities.
 
 ## Installation
 
